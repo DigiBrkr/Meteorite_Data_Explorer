@@ -6,7 +6,8 @@ import json
 import urllib.request, urllib.parse, urllib.error
 from urllib.parse import urljoin
 from urllib.parse import urlparse
-print(''' Meteorite Data Explorer Copyright (C) 2018  DigiBrkr This program comes with ABSOLUTELY NO WARRANTY; This is free software, and you are welcome to redistribute it under certain conditions. See LICENSE.md for details.''')
+print('''Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY; \n \nThis is free software, and you are welcome to redistribute it under certain conditions. \n
+See LICENSE.md for details. \n''')
 
 #Ignore SSL certificate errors
 ctx = ssl.create_default_context()
@@ -25,7 +26,8 @@ dbCursor.execute('''CREATE TABLE Meteorites(name TEXT, id INT, nametype TEXT, re
 mass INT, fall TEXT, year TEXT, reclat TEXT, reclong TEXT, geolocation TEXT) ''')
 
 #Grab the data from NASA
-url = "https://data.nasa.gov/resource/y77d-th95.json"
+#we use 20000000 ad the limit because that *should* give us all the data the is.
+url = "https://data.nasa.gov/resource/y77d-th95.json?%24limit=20000000"
 
 try:
     print("Downlading data. This may take some time depending on your internet connection. ")
@@ -96,12 +98,6 @@ for meteorite in data:
         year = str(year)
     except:
         year = "none"
-
-    reclat = meteorite.get("reclat")
-    try:
-        reclat = float(reclat)
-    except:
-        reclat = 0
 
 
     name = meteorite.get("name")
