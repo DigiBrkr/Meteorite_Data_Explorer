@@ -6,6 +6,7 @@ This project consists of a set of tools to analyze the data from the [NASA Meteo
 ### Usage
 To download the raw data from NASA type:
   For all Unix based Linux, Mac, BSD, etc.
+
   ```
   python3 DataGrab.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
@@ -35,6 +36,7 @@ To download the raw data from NASA type:
     ```
 To processes the raw data into a format that the analysis and visualization programs can understand type:
   For all Unix based Linux, Mac, BSD, etc.
+
   ```
     python3 DataOrganiser.py
       Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
@@ -94,15 +96,15 @@ To load the data into a format that can be displayed on a map type:
 
 Finally before opening `locations.html` it is **recommended** but not required that you edit `locations.html` to add a Google Maps API key. The steps are as follows:
 
-    1. Open `locations.html` in your text editor of choice.
+1. Open `locations.html` in your text editor of choice.
 
-    2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google acount and click "Get A Key".
+2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google acount and click "Get A Key".
 
-    3. Look for the line `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key="</script>` in `locations.html` and paste your API
-     key after the equals sign. The line should now look something like this:
-      `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=D3fin1ty4R3414PIK3yH3r3Y3P!"</script>`
+3. Look for the line `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key="</script>` in `locations.html` and paste your API
+   key after the equals sign. The line should now look something like this:
+    `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=D3fin1ty4R3414PIK3yH3r3Y3P!"</script>`
 
-    4. Open `locations.html` in your browser of choice and you should see a map, if not check the JavaScript console of your browser.
+4. Open `locations.html` in your browser of choice and you should see a map, if not check the JavaScript console of your browser.
 
 ### TO-DO
 
