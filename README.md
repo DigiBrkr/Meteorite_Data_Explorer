@@ -102,9 +102,9 @@ Finally before opening `locations.html` it is **recommended** but not required t
 
 This is a lift of features I plan to implement over the following months.
 
-- [] Tool-tips with detailed information about each meteorite on the map.
-- [] Dynamic display scaling on the map.  
-- [] Map filters i.e. only show landings between the years of 1963 - 1974.
-- [] A method for hiding API keys so the interactive web pages could be put on a web server.
-- [] Configurable charts and graphs for all the data.
-- [] Export to spreadsheet i.e. Microsoft Excel / LibreOffice Calc.  
+- [ ] Tool-tips with detailed information about each meteorite on the map.
+- [ ] Dynamic display scaling on the map.  
+- [ ] Map filters i.e. only show landings between the years of 1963 - 1974.
+- [ ] A method for hiding API keys so the interactive web pages could be put on a web server.
+- [ ] Configurable charts and graphs for all the data.
+- [ ] Export to spreadsheet i.e. Microsoft Excel / LibreOffice Calc.  
