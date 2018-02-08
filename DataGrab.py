@@ -30,7 +30,7 @@ mass INT, fall TEXT, year TEXT, reclat TEXT, reclong TEXT, geolocation TEXT) '''
 url = "https://data.nasa.gov/resource/y77d-th95.json?%24limit=20000000"
 
 try:
-    print("Downlading data. This may take some time depending on your internet connection. ")
+    print("Downloading data. This may take some time depending on your Internet connection. ")
     data = urllib.request.urlopen(url, context=ctx)
 
 except:
@@ -167,4 +167,4 @@ for meteorite in data:
 #write to disk
 db.commit()
 dbCursor.close()
-print("Data sucesfully writen to disk")
+print("Data successfully written to disk")

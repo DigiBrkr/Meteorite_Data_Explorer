@@ -57,7 +57,7 @@ indexCursor.execute('''CREATE TABLE IF NOT EXISTS Geolocations
 #deal with names
 rawCursor.execute('SELECT name FROM Meteorites')
 names = rawCursor.fetchall()
-print("Sanatising Data. This may take a while depending on the speed of your computer. \n")
+print("Sanitizing Data. This may take a while depending on the speed of your computer. \n")
 
 for name in names:
     name = str(name)
