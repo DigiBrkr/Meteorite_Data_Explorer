@@ -93,14 +93,18 @@ To load the data into a format that can be displayed on a map type:
   ```
 Finally before opening `locations.html` it is **recommended** but not required that you edit `locations.html` to add a Google Maps API key. The steps are as follows:
     1. Open `locations.html` in your text editor of choice.
+
     2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google acount and click "Get A Key".
-    3. Look for the line `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key="</script>` in `locations.html` and paste your API key after the equals sign. The line should now look something like this:
+
+    3. Look for the line `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key="</script>` in `locations.html` and paste your API
+     key after the equals sign. The line should now look something like this:
       `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=D3fin1ty4R3414PIK3yH3r3Y3P!"</script>`
+
     4. Open `locations.html` in your browser of choice and you should see a map, if not check the JavaScript console of your browser.
 
 ### TO-DO
 
-This is a lift of features I plan to implement over the following months.
+This is a list of features I plan to implement over the following months.
 
 - [ ] Tool-tips with detailed information about each meteorite on the map.
 - [ ] Dynamic display scaling on the map.  
