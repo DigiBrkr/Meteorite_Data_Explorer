@@ -48,10 +48,10 @@ To processes the raw data into a format that the analysis and visualization prog
       Sanitizing Data. This may take a while depending on the speed of your computer.
 
       Data sanitisation complete. This Program will now exit.
-
-      ```
-  For Microsoft Windows:
 ```
+      
+  For Microsoft Windows:
+
     DataOrganiser.py
       Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -62,10 +62,11 @@ To processes the raw data into a format that the analysis and visualization prog
       Sanitizing Data. This may take a while depending on the speed of your computer.
 
       Data sanitisation complete. This Program will now exit
-     ```
+     
 To load the data into a format that can be displayed on a map type:
   For all Unix based Linux, Mac, BSD, etc.
-```
+
+  ```
   python3 DataMaper.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
