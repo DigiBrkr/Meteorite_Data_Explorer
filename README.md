@@ -2,7 +2,7 @@
 ## A Tool to Analyze Data from NASA's Meteorite Landing Dataset
 
 ### Some Background
-This project consists of a set of tools to analyze the data from the (NASA Meteorite Landing Dataset)[https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh]. I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
+This project consists of a set of tools to analyze the data from the [NASA Meteorite Landing Dataset](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh]). I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
 ### Usage
 To download the raw data from NASA type:
   For all Unix based Linux, Mac, BSD, etc.
@@ -91,7 +91,9 @@ To load the data into a format that can be displayed on a map type:
 
     Please open locations.html in your web browser to view the data.
   ```
+
 Finally before opening `locations.html` it is **recommended** but not required that you edit `locations.html` to add a Google Maps API key. The steps are as follows:
+
     1. Open `locations.html` in your text editor of choice.
 
     2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google acount and click "Get A Key".
