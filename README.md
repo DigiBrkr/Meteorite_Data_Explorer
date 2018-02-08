@@ -50,7 +50,7 @@ To processes the raw data into a format that the analysis and visualization prog
       Data sanitisation complete. This Program will now exit.
 
       ```
-    For Microsoft Windows:
+  For Microsoft Windows:
 ```
     DataOrganiser.py
       Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
