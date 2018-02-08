@@ -65,6 +65,7 @@ To processes the raw data into a format that the analysis and visualization prog
       Data sanitisation complete. This Program will now exit
      
 To load the data into a format that can be displayed on a map type:
+
   For all Unix based Linux, Mac, BSD, etc.
 
   ```
