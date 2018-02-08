@@ -35,6 +35,7 @@ To download the raw data from NASA type:
     Data successfully written to disk
 ```
 To processes the raw data into a format that the analysis and visualization programs can understand type:
+
   For all Unix based Linux, Mac, BSD, etc.
 
    ```
