@@ -7,7 +7,7 @@ This project consists of a set of tools to analyze the data from the [NASA Meteo
 To download the raw data from NASA type:
   For all Unix based Linux, Mac, BSD, etc.
 
-  ```
+```
   python3 DataGrab.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -19,9 +19,9 @@ To download the raw data from NASA type:
     Data is 21098708 bytes long
     Data sanitisation in progress please wait
     Data successfully written to disk
-  ```
+```
   For the devil that is Microsoft Windows:
-  ```
+```
   DataGrab.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -33,11 +33,11 @@ To download the raw data from NASA type:
     Data is 21098708 bytes long
     Data sanitisation in progress please wait
     Data successfully written to disk
-    ```
+```
 To processes the raw data into a format that the analysis and visualization programs can understand type:
   For all Unix based Linux, Mac, BSD, etc.
 
-  ```
+```
     python3 DataOrganiser.py
       Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -49,7 +49,7 @@ To processes the raw data into a format that the analysis and visualization prog
 
       Data sanitisation complete. This Program will now exit.
 
-    ```
+```
     For Microsoft Windows:
     ```
     DataOrganiser.py
@@ -92,7 +92,7 @@ To load the data into a format that can be displayed on a map type:
     17099 Locations sucesfully written to disk.
 
     Please open locations.html in your web browser to view the data.
-  ```
+    ```
 
 Finally before opening `locations.html` it is **recommended** but not required that you edit `locations.html` to add a Google Maps API key. The steps are as follows:
 
