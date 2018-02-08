@@ -65,7 +65,7 @@ To processes the raw data into a format that the analysis and visualization prog
 ```
 To load the data into a format that can be displayed on a map type:
   For all Unix based Linux, Mac, BSD, etc.
-  ```
+```
   python3 DataMaper.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -77,10 +77,10 @@ To load the data into a format that can be displayed on a map type:
     17099 Locations sucesfully written to disk.
 
     Please open locations.html in your web browser to view the data.
-    ```
+```
   For Microsoft Windows:
 
-  ```
+```
   DataMapper.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
@@ -92,13 +92,13 @@ To load the data into a format that can be displayed on a map type:
     17099 Locations sucesfully written to disk.
 
     Please open locations.html in your web browser to view the data.
-    ```
+```
 
 Finally before opening `locations.html` it is **recommended** but not required that you edit `locations.html` to add a Google Maps API key. The steps are as follows:
 
 1. Open `locations.html` in your text editor of choice.
 
-2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google acount and click "Get A Key".
+2. Go to: https://developers.google.com/maps/documentation/javascript/get-api-key sign in to your Google account and click "Get A Key".
 
 3. Look for the line `<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key="</script>` in `locations.html` and paste your API
    key after the equals sign. The line should now look something like this:
