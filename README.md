@@ -2,7 +2,7 @@
 ## A Tool to Analyze Data from NASA's Meteorite Landing Dataset
 
 ### Some Background
-This project consists of a set of tools to analyze the data from the [NASA Meteorite Landing Dataset]("https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9s"). I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
+This project consists of a set of tools to analyze the data from the [NASA Meteorite Landing Dataset](https://goo.gl/QMp4DV). I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
 ### Usage
 To download the raw data from NASA type:
   For all Unix based Linux, Mac, BSD, etc.
