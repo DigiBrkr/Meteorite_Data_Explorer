@@ -10,20 +10,21 @@ print('Processing data please wait momentarily. ')
 #get the data
 dbConnection = sqlite3.connect('index.sqlite')
 dbCursor = dbConnection.cursor()
-dbCursor.execute ('SELECT DISTINCT Geolocation FROM Geolocations WHERE Geolocation != "none"')
+dbCursor.execute ('SELECT DISTINCT Geolocation FROM Geolocations WHERE Geolocation != "none" !="None"')
 geolocations = dbCursor.fetchall()
 
 #check for and remove existing data
 locations = pathlib.Path('locations.js')
 if locations.exists():
     os.remove('locations.js')
-#crate the new file
+#create the new file
 locations = codecs.open('locations.js', 'w', "utf-8" )
 locations.write("Data = [\n")
 #put the data in the file
 count = 0
 for location in geolocations:
     location = str(location)
+    if "one" in location : continue
     location = location.split(",")
     latitude = location[1].strip("'")
     longitude = location[0].strip("(")

@@ -1,4 +1,5 @@
 import sqlite3
+import re
 print('''Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY; \n \nThis is free software, and you are welcome to redistribute it under certain conditions. \n
 See LICENSE.md for details. \n''')
 loopCount = 0
@@ -10,7 +11,7 @@ rawCursor = rawConnection.cursor()
 indexDB = sqlite3.connect('index.sqlite')
 indexCursor = indexDB.cursor()
 
-#get rid of anhy exsiting tables
+#get rid of any exsiting tables
 indexCursor.execute('DROP TABLE IF EXISTS Names')
 indexCursor.execute('DROP TABLE IF EXISTS mID')
 indexCursor.execute('DROP TABLE IF EXISTS Nametypes')
@@ -318,16 +319,32 @@ geolocations = rawCursor.fetchall()
 for geolocation in geolocations:
     #convert to string
     geolocation = str(geolocation)
-    geolocation = geolocation.split(":")
-    try:
-        geolocation = geolocation[1]
-    except:
-        geolocation = "none"
+    geolocation = geolocation.lstrip("{")
+    # type:Point,coordinates['")
+    # geolocation = geolocation.strip("[")
+    geolocation = geolocation.replace("{'type': 'Point', 'coordinates': ", "")
+    geolocation = geolocation.replace('(', '')
+    geolocation = geolocation.replace(')', '')
+    geolocation = geolocation.replace('[', '')
+    geolocation = geolocation.replace(']', '')
+    geolocation = geolocation.replace('}', '')
+    geolocation = geolocation.replace('"', '')
+    geolocation = geolocation[:-1]
 
 
-    geolocation = geolocation[:-9]
-    geolocation = geolocation.strip()
-    geolocation = geolocation.strip("[")
+    # print(geolocation)
+
+    # geolocation = geolocation.strip("]}")
+    # geolocation = geolocation.split(",")
+    # try:
+    #     geolocation = geolocation[1]
+    # except:
+    #     geolocation = "none"
+
+
+    #geolocation = geolocation[:-9]
+    #geolocation = geolocation.strip()
+    #geolocation = geolocation.strip("[")
 
     #set all bad data to "none"
     if len(geolocation) <= 0:
@@ -335,7 +352,7 @@ for geolocation in geolocations:
 
     if geolocation == "0, 0":
         geolocation = "none"
-
+    #print(geolocation)
     indexCursor.execute('INSERT OR IGNORE INTO Geolocations(geolocation) VALUES (?)', (geolocation,))
 
     loopCount = loopCount + 1

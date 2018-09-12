@@ -2,7 +2,7 @@
 ## A Tool to Analyze Data from NASA's Meteorite Landing Dataset
 
 ### Some Background
-This project consists of a set of tools to analyze the data from the [NASA Meteorite Landing Dataset](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh]). I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
+This project consists of a set of tools to analyze the data from the [NASA Meteorite Landing Dataset](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9s). I created this to test my skills with Python and Data Science. I plan on updating the project on a reasonably regular basis. I encourage anyone who is willing, able and interested to contribute to the project. The programs(s) are primary written in Python with a bit of SQLite 3, HTML, and JavaScript as needed. The only things needed to run the program are Python 3 and an Internet connection.  
 ### Usage
 To download the raw data from NASA type:
   For all Unix based Linux, Mac, BSD, etc.
@@ -50,7 +50,7 @@ To processes the raw data into a format that the analysis and visualization prog
 
       Data sanitisation complete. This Program will now exit.
 ```
-      
+
   For Microsoft Windows:
 
     DataOrganiser.py
@@ -63,13 +63,13 @@ To processes the raw data into a format that the analysis and visualization prog
       Sanitizing Data. This may take a while depending on the speed of your computer.
 
       Data sanitisation complete. This Program will now exit
-     
+
 To load the data into a format that can be displayed on a map type:
 
   For all Unix based Linux, Mac, BSD, etc.
 
   ```
-  python3 DataMaper.py
+  python3 DataMapper.py
     Meteorite Data Explorer Copyright (C) 2018 DigiBrkr This program comes with ABSOLUTELY NO WARRANTY;
 
     This is free software, and you are welcome to redistribute it under certain conditions.
